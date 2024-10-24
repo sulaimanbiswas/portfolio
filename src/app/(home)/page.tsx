@@ -1,8 +1,6 @@
 import HeroSection from "./components/HeroSection";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="">
       <HeroSection />
