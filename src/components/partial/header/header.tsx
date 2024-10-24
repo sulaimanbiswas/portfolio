@@ -1,9 +1,7 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Home, MessageCircle, Projector, User } from "lucide-react";
 
-type Props = {};
-
-function Header({}: Props) {
+function Header() {
   const navItems = [
     {
       name: "Home",
