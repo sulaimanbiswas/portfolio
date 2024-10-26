@@ -7,7 +7,7 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
       <ProgressBarProviders>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
