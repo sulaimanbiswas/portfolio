@@ -127,7 +127,7 @@ export default function WordCloud3D({ customWords }: WordCloud3DProps) {
       <ambientLight intensity={0.5} />
       <fog attach="fog" args={["#3b82f6", 20, 80]} />
       <Suspense fallback={null}>
-        <RotatingGroup count={6} radius={20} customWords={customWords} />
+        <RotatingGroup count={7} radius={20} customWords={customWords} />
       </Suspense>
       <TrackballControls />
     </Canvas>
