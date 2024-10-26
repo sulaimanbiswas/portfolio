@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Facebook } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -9,12 +11,21 @@ const HeroSection = () => {
           <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
             Hello, I&apos;m
           </p>
-          <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl">
+          <p className="z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl">
             Md Suliman
           </p>
-          <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-lg text-transparent sm:text-2xl">
+          <p className="z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-lg text-transparent sm:text-2xl">
             Front-end Web Developer
           </p>
+          {/* Icon  */}
+          <div className="flex gap-4">
+            <Link href="">
+              <Button size="icon" variant="outline">
+                <Facebook />
+              </Button>
+            </Link>
+          </div>
+
           <div className="flex gap-4">
             <Button className="relative inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#ffffff,45%,#d4e4f0,55%,#ffffff)] bg-[length:200%_100%] px-6 font-medium text-slate-950 transition-colors dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] dark:text-slate-400">
               Hire me
