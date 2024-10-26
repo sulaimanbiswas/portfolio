@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
-import WordCloud3D from "@/components/word-cloud-3d/WordCloud3D";
 import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+const WordCloud3D = dynamic(
+  () => import("@/components/word-cloud-3d/WordCloud3D"),
+  { ssr: false },
+);
 
 const HeroSection = () => {
   return (
