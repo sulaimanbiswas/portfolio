@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
+import SocialIcon from "./SocialIcon";
 const WordCloud3D = dynamic(
   () => import("@/components/word-cloud-3d/WordCloud3D"),
   { ssr: false },
@@ -14,48 +13,19 @@ const HeroSection = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-2 gap-5">
           <div className="col-span-2 flex flex-col items-start justify-center gap-4 md:col-span-1">
-            <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
+            <p className="relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
               Hello, I&apos;m
             </p>
-            <p className="z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl">
+            <p className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl">
               Md Suliman
             </p>
-            <p className="z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-lg text-transparent sm:text-2xl">
+            <p className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-lg text-transparent sm:text-2xl">
               Front-end Web Developer
             </p>
 
             {/* Icon  */}
             <div className="flex gap-4">
-              <Link href="">
-                <Button size="icon" variant="outline" className="relative">
-                  <Github />
-                  <span className="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                </Button>
-              </Link>
-              <Link href="">
-                <Button size="icon" variant="outline" className="relative">
-                  <Linkedin />
-                  <span className="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                </Button>
-              </Link>
-              <Link href="">
-                <Button size="icon" variant="outline" className="relative">
-                  <Facebook />
-                  <span className="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                </Button>
-              </Link>
-              <Link href="">
-                <Button size="icon" variant="outline" className="relative">
-                  <Instagram />
-                  <span className="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                </Button>
-              </Link>
-              <Link href="">
-                <Button size="icon" variant="outline" className="relative">
-                  <Youtube />
-                  <span className="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                </Button>
-              </Link>
+              <SocialIcon />
             </div>
 
             <div className="flex gap-4">
