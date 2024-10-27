@@ -1,10 +1,20 @@
 import { Button } from "@/components/ui/button";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import dynamic from "next/dynamic";
 import SocialIcon from "./SocialIcon";
 const WordCloud3D = dynamic(
   () => import("@/components/word-cloud-3d/WordCloud3D"),
   { ssr: false },
 );
+
+const words = [
+  {
+    text: "Md",
+  },
+  {
+    text: "Sulaiman",
+  },
+];
 
 const HeroSection = () => {
   return (
@@ -16,9 +26,11 @@ const HeroSection = () => {
             <p className="relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
               Hello, I&apos;m
             </p>
-            <p className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl">
-              Md Suliman
-            </p>
+            <TypewriterEffectSmooth
+              words={words}
+              className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl"
+            />
+
             <p className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-lg text-transparent sm:text-2xl">
               Front-end Web Developer
             </p>
